@@ -1,0 +1,11 @@
+{
+  "name": "web-personal-api",
+  "version": "0.0.1",
+  "description": "Api de la web personal",
+  "main": "index.js",
+  "author": "Fernando Cardona Toro",
+  "license": "MIT",
+  "dependencies": {
+    "mongoose": "^6.10.0"
+  }
+}
