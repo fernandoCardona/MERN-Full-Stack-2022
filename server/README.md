@@ -13,3 +13,4 @@
 - yarn add cors
 - yarn add bcryptjs
 - yarn add jsonwebtoken
+- yarn add connect-multiparty ( subida de archivos y data juntos)

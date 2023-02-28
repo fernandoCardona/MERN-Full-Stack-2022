@@ -1,10 +1,10 @@
 const jwt = require('jsonwebtoken');
-const { JWT_SECRET_KEY } = require('./constants');
+const { JWT_SECRET_KEY } = require('../constants');
 
 
 function createAccessToken(user) {
     const expToken = new Date();
-    expToken.setHours( expToken.getHours() + 3 );
+    expToken.setHours( expToken.getHours() + 10 );
 
     const payload = {
         token_type: 'access',
