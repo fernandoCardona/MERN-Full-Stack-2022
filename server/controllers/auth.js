@@ -1,5 +1,8 @@
-//IMPORTAR DEPENDENCIAS Y MODULOS:
+//IMPORTS DE REACT:
+
+//IMPORTS DEPENDENCIAS:
 const bcrypt = require('bcryptjs');
+//IMPORTS DE LA APP:
 const User = require('../models/User');
 const jwt = require('../utils/jwt');
 
@@ -39,7 +42,7 @@ const register = ( req, res ) => {
                 userStorage
             })
         }
-    })
+    });
     //console.log(user)
     //console.log('Se ha ejecutado el registro');
 }
