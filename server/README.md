@@ -7,6 +7,7 @@
 ## **1. Dependencias del proyecto:** ( Dependencias a instalar con yarn)
 
 - yarn add mongoose
+- yarn add mongoose-paginate
 - yarn add nodemon
 - yarn add express
 - yarn add body-parser

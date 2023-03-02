@@ -77,21 +77,49 @@ const updateUser = async( req, res ) => {
     const userData = req.body;
     
     //Controlamos el password:
+    if (userData.password) {
+        const salt = bcrypt.genSaltSync(10);
+        const hashPassword = bcrypt.hashSync(userData.password, salt);
+            //console.log(password);
+            //console.log(hashPassword)
+            userData.password = hashPassword;
+    }else {
+        delete userData.password;
+    }
 
     //Controlamos imagen de avatar:
+    if (req.files.avatar) {
+        const imagePath = image.getFilePath(req.files.avatar);
+        userData.avatar = imagePath;
+    }
 
+    //Actualizamos los datos de usuario:
     User.findByIdAndUpdate({_id: id}, userData, (error) => {
         if (error) {
             res.status(400).send({ msg: 'Error al actualizar el usuario' });
         }else {
-            res.status(400).send({ msg: 'Actualizacion el usuario con exito' });
+            res.status(200).send({ msg: 'Actualizacion el usuario con exito' });
         }
     });
+}
+
+const deleteUser = async( req, res ) => {
+    const { id } = req.params;
+    User.findByIdAndDelete({_id: id}, (error) => {
+        if (error) {
+            res.status(400).send({ msg: 'Error al borrar el usuario' });
+        }else {
+            res.status(200).send({ msg: 'Usuario borrado con exito' });
+        }
+        
+    });
+
 }
 
 module.exports = {
     getMe,
     getUsers,
     createUser,
-    updateUser
+    updateUser,
+    deleteUser
 };

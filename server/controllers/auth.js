@@ -71,11 +71,12 @@ const login = ( req, res ) => {
                     //servidor 002 no existe el usuario
                     res.status(500).send({ msg: 'Error del servidor 002' });
                 }else if (!check) {
-                    //servidor 003: Contraseña incorrecta
-                    res.status(400).send({ msg: 'Error del servidor 003' });
-                }else if (!userStored.active) {
                     //servidor 004: Usuario no activo
                     res.status(401).send({ msg: 'Error del servidor 004' });
+                    
+                }else if (!userStored.active) {
+                    //servidor 003: Contraseña incorrecta
+                    res.status(400).send({ msg: 'Error del servidor 003' });
                 }else {
                     res.status(200).send({
                         msg: 'login 0k!!',
