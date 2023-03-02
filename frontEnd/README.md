@@ -1,4 +1,4 @@
-# **API MERN-Full-Stack-2022**
+# **FRONT MERN-Full-Stack-2022**
 
 ## **Descriciopn del Proyecto:**
 
@@ -6,12 +6,8 @@
 
 ## **1. Dependencias del proyecto:** ( Dependencias a instalar con yarn)
 
-- yarn add mongoose
-- yarn add mongoose-paginate
-- yarn add nodemon
-- yarn add express
-- yarn add body-parser
-- yarn add cors
-- yarn add bcryptjs
-- yarn add jsonwebtoken
-- yarn add connect-multiparty ( subida de archivos y data juntos)
+- yarn add sass
+- yarn add semantic-ui-react semantic-ui-css
+- yarn add lodash
+- yarn add formik
+- yarn add yup
