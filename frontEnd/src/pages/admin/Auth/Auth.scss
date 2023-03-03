@@ -1,0 +1,40 @@
+//IMPORTAMOS index.scss GENERALES:
+//@import '~/src/scss/index.scss';
+@import '../../../scss/index.scss';
+
+.auth {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('../../../assets/jpg/auth-bg.jpg');
+    background-position: center;
+    background-size: contain;
+    padding-top: 100px;
+
+    .logo{
+        width: 200px;
+        margin-bottom: 30px;
+
+    }
+    &__forms {
+        width: 450px;
+
+        .ui.menu {
+            .item {
+                width: 50%;
+                justify-content: center;
+                background-color: $background-light !important;
+                border-radius: 0px !important;
+                border-top: 4px solid $border-grey !important;
+                font-size: 18px;
+
+                &.active {
+                    font-weight: normal;
+                    border-radius: 0px !important;
+                    border-top-color: $primary !important;
+                }
+            }
+        }
+    }
+}

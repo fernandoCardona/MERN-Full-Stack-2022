@@ -1,1 +1,1 @@
-export * from './clientLayaout';
+export * from './ClientLayaout';

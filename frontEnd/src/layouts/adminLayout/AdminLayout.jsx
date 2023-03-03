@@ -5,10 +5,12 @@
 
 export const AdminLayout = (props) => {
     const { children } = props;
-  return (
-    <div>
-        <h2>Husando el AdminLayout</h2>
-        { children }
-    </div>
-  )
+
+    
+    return (
+      <div>
+          <h2>Usando el AdminLayout</h2>
+          { children }
+      </div>
+    )
 }

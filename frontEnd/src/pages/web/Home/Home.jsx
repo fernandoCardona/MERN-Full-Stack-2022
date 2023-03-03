@@ -2,10 +2,11 @@
 //IMPORTS DEPENDENCIAS DE TERCEROS:
 //IMPORTS DEPENDENCIAS DE LA APP:
 //IMPORTS COMPONENTS DE LA APP:
-//IMPORTS Styles DE LA APP:
 
 export const Home = () => {
-  return (
-    <h1>Estamos en Home</h1>
-  )
+    return (
+        <div>
+            <h1>Renderizando desde WEB - HOME.</h1>
+        </div>
+    )
 }

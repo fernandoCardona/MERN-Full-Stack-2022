@@ -3,14 +3,10 @@
 //IMPORTS DEPENDENCIAS DE LA APP:
 //IMPORTS COMPONENTS DE LA APP:
 
-export const clientLayaout = (props) => {
-    const { children } = props;
-
-
+export const Blog = () => {
     return (
         <div>
-            <h2>Usando el ClientLayout</h2>
-            { children }
+            <h1>Renderizando desde WEB - BLOG.</h1>
         </div>
     )
 }

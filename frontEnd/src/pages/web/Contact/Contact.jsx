@@ -3,14 +3,13 @@
 //IMPORTS DEPENDENCIAS DE LA APP:
 //IMPORTS COMPONENTS DE LA APP:
 
-export const clientLayaout = (props) => {
-    const { children } = props;
+import React from 'react'
 
+export const Contact = () => {
 
     return (
         <div>
-            <h2>Usando el ClientLayout</h2>
-            { children }
+            <h1>Resnderizando desde WEB - Contact</h1>
         </div>
     )
 }

@@ -2,10 +2,12 @@
 //IMPORTS DEPENDENCIAS DE TERCEROS:
 //IMPORTS DEPENDENCIAS DE LA APP:
 //IMPORTS COMPONENTS DE LA APP:
-//IMPORTS Styles DE LA APP:
 
-export const Auth = () => {
+
+export const Newsletter = () => {
   return (
-    <h1>Estamos en Auth</h1>
+    <div>
+        <h1>Renderizando Newsletter.</h1>
+    </div>
   )
 }
