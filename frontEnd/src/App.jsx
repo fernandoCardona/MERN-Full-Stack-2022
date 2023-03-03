@@ -1,13 +1,13 @@
 //IMPORTS DE REACT:
-import { useState } from 'react';
-
+import { BrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
 //IMPORTS DEPENDENCIAS DE TERCEROS:
-import { Button } from 'semantic-ui-react';
-
-//IMPORTS DEPENDENCIAS DE LA APP:
+//IMPORTS COMPONENTS DE LA APP:
+import { AdminRouter, WebRouter } from "./router";
+//IMPORTS Styles DE LA APP:
 import './App.css';
 
-//IMPORTS COMPONENTS DE LA APP:
 
 
 
@@ -15,13 +15,10 @@ function App() {
   
 
     return (
-      <div className="App">
-        <h1>App Component</h1>
-        <div>
-          <Button primary>Primary</Button>
-          <Button secondary>Secondary</Button>
-        </div>
-      </div>
+      <BrowserRouter>
+          <WebRouter/>
+          <AdminRouter/>
+      </BrowserRouter>
     )
 }
 
