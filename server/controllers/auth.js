@@ -11,8 +11,8 @@ const register = ( req, res ) => {
     //console.log(req.body);
     const { firstname, lastname, email, password } = req.body;
 
-    if (!firstname) res.status(400).send({ msg: 'firstname is required' });
-    if (!lastname) res.status(400).send({ msg: 'lastname is required' });
+    //if (!firstname) res.status(400).send({ msg: 'firstname is required' });
+    //if (!lastname) res.status(400).send({ msg: 'lastname is required' });
     if (!email) res.status(400).send({ msg: 'email is required' });
     if (!password) res.status(400).send({ msg: 'password is required' });
 
