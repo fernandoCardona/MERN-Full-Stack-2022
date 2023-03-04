@@ -4,21 +4,21 @@ import React, { useState } from "react";
 //IMPORTS DEPENDENCIAS DE LA APP:
 import { Tab } from "semantic-ui-react"
 //IMPORTS COMPONENTS DE LA APP:
-import { RegisterForm } from '../../../components/Admin/Auth'
+import { RegisterForm, LoginForm } from '../../../components/Admin/Auth'
 //IMPORTS Styles/Images DE LA APP:
 import { Icon } from "../../../assets";
 import './Auth.scss';
 
 export const Auth = () => {
     //controlala posicion de index login o Register:
-    const [activeIndex, setActiveIndex] = useState(1);
+    const [activeIndex, setActiveIndex] = useState(0);
     const openLogin = () => setActiveIndex(0);
     const panes = [
       {
         menuItem: "Login",
         render: () =>(
             <Tab.Pane>
-                <h2>Login FORM</h2>
+                <LoginForm/>
             </Tab.Pane>
         ),
       },

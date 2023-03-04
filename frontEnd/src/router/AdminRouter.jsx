@@ -7,17 +7,20 @@ import {
 //IMPORTS DEPENDENCIAS DE TERCEROS:
 import { map } from "lodash";
 //IMPORTS DEPENDENCIAS DE LA APP:
+import { useAuth } from "../hooks";
 //IMPORTS COMPONENTS DE LA APP:
 import { AdminLayout } from "../layouts/adminLayout/AdminLayout";
 import { Blog, Courses, Menu, Newsletter, Users} from '../pages/admin';
 import { Auth } from '../pages/admin/Auth/Auth.jsx'
+ 
 //IMPORTS Styles DE LA APP:
 
-const user = null;
+//const user = null;
 //const user = { email: 'chi@chi.com' };
 
-export const AdminRouter = (  ) => {
-  //1.1-
+export const AdminRouter = () => {
+  const {user} = useAuth();
+  //console.log(user)
   //1.0- Cargamos AdminLayout:
   const loadLayout =  ( Layout, Page ) => {
     return (
@@ -27,7 +30,6 @@ export const AdminRouter = (  ) => {
     );
     
   }
-
 
   return (  
     <Routes>

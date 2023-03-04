@@ -11,3 +11,4 @@
 - yarn add lodash
 - yarn add formik
 - yarn add yup
+- yarn add jwt-decode

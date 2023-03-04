@@ -5,8 +5,10 @@ import { BrowserRouter,
 //IMPORTS DEPENDENCIAS DE TERCEROS:
 //IMPORTS COMPONENTS DE LA APP:
 import { AdminRouter, WebRouter } from "./router";
+import { AuthProvider } from "./contexts"; 
 //IMPORTS Styles DE LA APP:
 import './App.css';
+
 
 
 
@@ -15,10 +17,13 @@ function App() {
   
 
     return (
-      <BrowserRouter>
-          <WebRouter/>
-          <AdminRouter/>
-      </BrowserRouter>
+      <AuthProvider>
+          <BrowserRouter>
+              <WebRouter/>
+              <AdminRouter/>
+          </BrowserRouter>
+      </AuthProvider>
+      
     )
 }
 

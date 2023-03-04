@@ -1,0 +1,43 @@
+//IMPORTAMOS index.scss GENERALES:
+//@import '~/src/scss/index.scss';
+@import '../../scss/index.scss';
+
+$withLeftMenu: 200px;
+
+.admin-layout {
+    min-height: 100vh;
+    max-height: 100vh;
+    display: flex;
+    background-color: $background-grey;
+
+    &__left {
+        width: $withLeftMenu;
+        background-color: $background-dark;
+        
+        .logo {
+            height: 30px;
+            width: 100%;
+            margin: 10px 0px;
+        }
+    } 
+    &__right {
+        width: calc(100% - $withLeftMenu);
+
+        &-header {
+            height: 50px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 0px 10px;
+            background-color: $background-dark;
+             
+        }
+
+        &-content {
+            position: relative;
+            margin: 20px;
+        }
+    }
+}
+
+
