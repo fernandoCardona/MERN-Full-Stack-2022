@@ -1,0 +1,14 @@
+//IMPORTAMOS index.scss GENERALES:
+//@import '~/src/scss/index.scss';
+@import '../../../scss/index.scss';
+
+.users-page {
+    &__add {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+    }
+    > .ui.button{
+        margin: 0px;
+    }
+}

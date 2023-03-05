@@ -13,12 +13,12 @@ export function initialValues() {
     };
  }
  
- export function validationSchema() {
-     return Yup.object({
-         email: Yup.string()
-                 .email("The email is not valid")
-                 .required("Obligatory field"),
-         password: Yup.string().required("Obligatory field"),
-         
-     });
-   }
+export function validationSchema() {
+    return Yup.object({
+        email: Yup.string()
+                .email("The email is not valid")
+                .required("Obligatory field"),
+        password: Yup.string().required("Obligatory field"),
+        
+    });
+}

@@ -26,4 +26,4 @@ export function validationSchema() {
                 .oneOf([Yup.ref("password")], "Passwords have to be the same"),
         conditionsAccepted: Yup.bool().isTrue(true),
     });
-  }
+}
