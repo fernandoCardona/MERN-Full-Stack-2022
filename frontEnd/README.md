@@ -8,7 +8,8 @@
 
 - yarn add sass
 - yarn add semantic-ui-react semantic-ui-css
-- yarn add lodash
-- yarn add formik
-- yarn add yup
-- yarn add jwt-decode
+- yarn add lodash 
+- yarn add formik (creacion de formularios)
+- yarn add yup (para validar la info de campos como Inputs)
+- yarn add jwt-decode (decodifica jwt)
+- yarn add react-dropzone (crea zonas para soltar archivos y subirlos)

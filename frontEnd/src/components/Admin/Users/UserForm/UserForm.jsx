@@ -1,13 +1,16 @@
 //IMPORTS DE REACT:
-
+import { useCallback } from "react";
 //IMPORTS DEPENDENCIAS DE TERCEROS:
 import { Form, Image } from "semantic-ui-react";
 import { useFormik } from "formik";
+import { useDropzone } from "react-dropzone";
 //IMPORTS DEPENDENCIAS DE LA APP:
 import { initialValues, validationSchema } from "./UserForm.form";
 //IMPORTS COMPONENTS DE LA APP:
 //IMPORTS Styles/Images DE LA APP:
+import { image } from "../../../../assets";
 import './UseForm.scss';
+
 
 
 export const UserForm = ( props ) => {
@@ -29,10 +32,33 @@ export const UserForm = ( props ) => {
       },
     });
 
+    //Funcion que ejecuta el area Dropzone con el hook useCallback:
+    const onDrop = useCallback((acceptedFiles) => {
+      const file = acceptedFiles[0];
+      formik.setFieldValue("avatar", URL.createObjectURL(file));
+      formik.setFieldValue("fileAvatar", file);
+     
+
+    });
+    const { getRootProps, getInputProps } = useDropzone({
+      accept: "image/jpeg, image/png",
+      onDrop,
+    });
+    const getAvatar = () => {
+      if (formik.values.fileAvatar) {
+        return formik.values.avatar;
+      } else if (formik.values.avatar) {
+        return `${ENV.BASE_PATH}/${formik.values.avatar}`;
+      }
+      
+      return image.noAvatar;
+    };
+
     return (
       <Form className="user-form" onSubmit={formik.handleSubmit}>
-          <div className="user-form__avatar">
-              <span>AVATAR</span>
+          <div className="user-form__avatar" { ...getRootProps()}>
+              <input {...getInputProps()} />
+              <Image avatar size='small' src={ getAvatar() }/>
           </div>
           <Form.Group widths="equal">
           <Form.Input
