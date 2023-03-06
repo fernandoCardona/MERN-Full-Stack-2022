@@ -5,7 +5,7 @@ import { Tab, Button } from "semantic-ui-react";
 //IMPORTS DEPENDENCIAS DE LA APP:
 //IMPORTS COMPONENTS DE LA APP:
 import { BasicModal } from "../../../components/Shared";
-import { UserForm } from "../../../components/Admin/Users";
+import { UserForm, ListUsers } from "../../../components/Admin/Users";
 //IMPORTS Styles/Images DE LA APP:
 import './Users.scss';
 
@@ -26,7 +26,7 @@ export const Users = () => {
             menuItem: 'Active users',
             render: () => (
                 <Tab.Pane attached={false}>
-                    <h2>Active Users:</h2>
+                    <ListUsers usersActive={true} />
                 </Tab.Pane>
             ),
         },
@@ -34,7 +34,7 @@ export const Users = () => {
             menuItem: 'Inactive users',
             render: () => (
                 <Tab.Pane attached={false}>
-                    <h2>Inactive Users:</h2>
+                    <ListUsers usersActive={false} />
                 </Tab.Pane>
             ),
         },

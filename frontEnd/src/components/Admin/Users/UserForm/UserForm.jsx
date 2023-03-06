@@ -6,25 +6,33 @@ import { useFormik } from "formik";
 import { useDropzone } from "react-dropzone";
 //IMPORTS DEPENDENCIAS DE LA APP:
 import { initialValues, validationSchema } from "./UserForm.form";
+import { User } from "../../../../api/user";
+import { useAuth } from "../../../../hooks";
 //IMPORTS COMPONENTS DE LA APP:
 //IMPORTS Styles/Images DE LA APP:
 import { image } from "../../../../assets";
 import './UseForm.scss';
 
 
+const userController = new User();
+ 
 
 export const UserForm = ( props ) => {
     //Extraemos las props que recibimos:
     const { close, onReload, user } = props;
+    //Obtenemos el accessToken de useAuth();
+    const { accessToken } = useAuth();
 
     //Controlamos los datos del formulario con el hook useFormik:
     const formik = useFormik({
       initialValues: initialValues(),
       validationSchema: validationSchema(),
       validateOnChange: false,
-      onSubmit: async (formValue) => {
+      onSubmit: async ( formValue ) => {
         try {
-           console.log(formValue);
+            await userController.createUser(accessToken, formValue);
+            close();
+            //console.log( formValue );
            
         } catch (error) {
           console.error(error);
@@ -41,12 +49,15 @@ export const UserForm = ( props ) => {
 
     });
     const { getRootProps, getInputProps } = useDropzone({
-      accept: "image/jpeg, image/png",
+      accept: {
+        'image/*': ['.jpeg', '.jpg', '.png']
+      },
       onDrop,
     });
     const getAvatar = () => {
       if (formik.values.fileAvatar) {
         return formik.values.avatar;
+
       } else if (formik.values.avatar) {
         return `${ENV.BASE_PATH}/${formik.values.avatar}`;
       }
