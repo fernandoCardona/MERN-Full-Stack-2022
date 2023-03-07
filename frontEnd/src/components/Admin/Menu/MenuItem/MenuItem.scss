@@ -1,0 +1,30 @@
+//IMPORTAMOS index.scss GENERALES:
+//@import '~/src/scss/index.scss';
+@import '../../../../scss/index.scss';
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #c4c4c4;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+
+    &:last-of-type {
+        border: 0px ;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+
+        &-title {
+            font-weight: bold;
+        }
+        &-path {
+            opacity: 0.6;
+        }
+    }
+}

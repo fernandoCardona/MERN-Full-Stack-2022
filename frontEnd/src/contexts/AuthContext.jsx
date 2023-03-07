@@ -10,6 +10,7 @@ import { hasExpiredToken } from "../utils";
 
 const userController = new User();
 const authController = new Auth();
+
 export const AuthContext = createContext();
 
 export function AuthProvider( props )  {
