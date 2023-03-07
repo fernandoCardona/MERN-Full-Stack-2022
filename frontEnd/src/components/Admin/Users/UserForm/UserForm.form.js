@@ -6,15 +6,15 @@ import * as Yup from "yup";
 //IMPORTS COMPONENTS DE LA APP:
 //IMPORTS Styles/Images DE LA APP:
 
-export function initialValues() {
+export function initialValues(user) {
     return {
-        avatar:'',
+        avatar: user?.avatar || '',
         fileAvatar: null,
-        firstname: '',
-        lastname: '',
-        email: '',
+        firstname: user?.firstname || '',
+        lastname: user?.lastname || '',
+        email: user?.email || '',
         password: '',
-        role: ''
+        role: user?.role || '',
     }
 };
 

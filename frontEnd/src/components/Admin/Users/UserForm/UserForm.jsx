@@ -8,10 +8,12 @@ import { useDropzone } from "react-dropzone";
 import { initialValues, validationSchema } from "./UserForm.form";
 import { User } from "../../../../api/user";
 import { useAuth } from "../../../../hooks";
+import { ENV } from "../../../../utils";
 //IMPORTS COMPONENTS DE LA APP:
 //IMPORTS Styles/Images DE LA APP:
 import { image } from "../../../../assets";
 import './UseForm.scss';
+
 
 
 const userController = new User();
@@ -25,12 +27,18 @@ export const UserForm = ( props ) => {
 
     //Controlamos los datos del formulario con el hook useFormik:
     const formik = useFormik({
-      initialValues: initialValues(),
-      validationSchema: validationSchema(),
+      initialValues: initialValues(user),
+      validationSchema: validationSchema(user),
       validateOnChange: false,
       onSubmit: async ( formValue ) => {
         try {
-            await userController.createUser(accessToken, formValue);
+            if (!user) {
+              await userController.createUser(accessToken, formValue);
+            }else {
+              await userController.updateUser(accessToken, user._id, formValue);
+            }
+            
+            onReload();
             close();
             //console.log( formValue );
            

@@ -16,17 +16,20 @@ import './Users.scss';
 export const Users = () => {
     //usestate:
     const [showModal, setShowModal] = useState(false);
+    //useState Reload users:
+    const [reload, setReload] = useState(false);
 
     //Definimos la funcion onClose para cerrar el modal:
     const onOpenCloseModal = () => setShowModal( (prevState) => !prevState );
-
+    const onReload = () => setReload( (prevState )=> !prevState )
+;
     //Manejo de Tabs:
     const panes = [
         {
             menuItem: 'Active users',
             render: () => (
                 <Tab.Pane attached={false}>
-                    <ListUsers usersActive={true} />
+                    <ListUsers usersActive={true} reload={reload} onReload={onReload}/>
                 </Tab.Pane>
             ),
         },
@@ -34,7 +37,7 @@ export const Users = () => {
             menuItem: 'Inactive users',
             render: () => (
                 <Tab.Pane attached={false}>
-                    <ListUsers usersActive={false} />
+                    <ListUsers usersActive={false} reload={reload} onReload={onReload}/>
                 </Tab.Pane>
             ),
         },
@@ -53,7 +56,7 @@ export const Users = () => {
                 <Tab menu={{ secondary: true }} panes={panes} />
             </div>
             <BasicModal show={showModal} close={onOpenCloseModal} title='Create new user'>
-                <UserForm close={ onOpenCloseModal }/>
+                <UserForm close={ onOpenCloseModal } onReload={onReload}/>
             </BasicModal>
         </>
     )
