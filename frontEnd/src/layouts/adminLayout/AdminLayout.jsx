@@ -2,7 +2,7 @@
 //IMPORTS DEPENDENCIAS DE TERCEROS:
 //IMPORTS DEPENDENCIAS DE LA APP:
 //IMPORTS COMPONENTS DE LA APP:
-import { AdminMenu, Logout } from '../../components/AdminLayout';
+import { AdminMenu, Logout } from '../../components/Admin/AdminLayout';
 //IMPORTS Styles/Images DE LA APP:
 import { Icon } from '../../assets';
 

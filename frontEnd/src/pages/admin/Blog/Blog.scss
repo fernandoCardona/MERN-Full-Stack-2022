@@ -1,0 +1,20 @@
+//IMPORTAMOS index.scss GENERALES:
+//@import '~/src/scss/index.scss';
+@import '../../../scss/index.scss';
+
+.blog-page {
+
+
+    &__add {
+      display: flex;
+      justify-content: flex-end;
+  
+      > .ui.button {
+        margin: 0px;
+      }
+    }
+  
+    .ui.menu.secondary {
+      min-height: 0px;
+    }
+  }

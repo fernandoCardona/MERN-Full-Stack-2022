@@ -12,7 +12,12 @@ export const ENV = {
         USERS: 'users',
         //Menu endPoins:
         MENU: 'menu',
-
+        //Courses endPoins:
+        COURSE: 'course',
+        //Newsletter endPoinds:
+        NEWSLETTER: "newsletter",
+        //Blog endPoins:
+        POST: "post",
     }, 
     JWT: {
         ACCESS: 'access',

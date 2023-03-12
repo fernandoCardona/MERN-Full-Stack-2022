@@ -3,7 +3,7 @@
 import { useNavigate } from "react-router-dom";
 import { Button, Icon } from 'semantic-ui-react';
 //IMPORTS DEPENDENCIAS DE LA APP:
-import { useAuth } from '../../../hooks';
+import { useAuth } from '../../../../hooks';
 //IMPORTS COMPONENTS DE LA APP:
 //IMPORTS Styles/Images DE LA APP:
 import './Logout.scss';

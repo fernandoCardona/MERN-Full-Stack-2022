@@ -1,0 +1,24 @@
+//IMPORTAMOS index.scss GENERALES:
+//@import '~/src/scss/index.scss';
+@import '../../../scss/index.scss';
+
+.courses-page {
+
+
+    &__add {
+       position: absolute;
+       top: 0px;
+       right: 0px;
+
+       > .ui.button {
+        margin: opx;
+       }  
+    }
+    .ui.tab.segment {
+        height: calc(100vh - 200px);
+        overflow-y: scroll;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+}

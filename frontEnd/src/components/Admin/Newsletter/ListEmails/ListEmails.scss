@@ -1,0 +1,14 @@
+//IMPORTAMOS index.scss GENERALES:
+//@import '~/src/scss/index.scss';
+@import '../../../../scss/index.scss';
+
+
+.list-emails {
+
+
+    &__pagination {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+}
