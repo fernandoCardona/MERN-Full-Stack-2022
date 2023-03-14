@@ -2,7 +2,7 @@
 //IMPORTS DEPENDENCIAS DE TERCEROS:
 import { Container } from "semantic-ui-react";
 //IMPORTS DEPENDENCIAS DE LA APP:
-import { TopBar } from "../../components/Web";
+import { TopBar, Footer } from "../../components/Web";
 //IMPORTS COMPONENTS DE LA APP:
 import "./ClientLayout.scss";
 
@@ -20,9 +20,9 @@ export const clientLayaout = (props) => {
 
             <div className="client-layout__footer">
                 <Container>
-                    <span>INFO</span>
-                    <span>MENU</span>
-                    <span>NEWSLETTER</span>
+                    <Footer.Info />
+                    <Footer.Menu />
+                    <Footer.Newsletter />
                 </Container>
                 <Container>
                     <span>© ALL RIGHTS RESERVED</span>

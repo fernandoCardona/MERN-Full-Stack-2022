@@ -1,0 +1,19 @@
+//IMPORTAMOS index.scss GENERALES:
+//@import '~/src/scss/index.scss';
+@import '../../../../scss/index.scss';
+
+.footer-newsletter {
+    width: 33.33%;
+    padding-left: 60px;
+  
+    > h4 {
+        color: $text-light;
+        margin-bottom: 20px;
+    }
+  
+    .success {
+        color: $success;
+        text-align: center;
+        font-size: 12px;
+    }
+}
