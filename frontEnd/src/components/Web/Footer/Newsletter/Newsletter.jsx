@@ -27,6 +27,7 @@ export const Newsletter = () => {
                 await newsletterController.registerEmail(formValue.email);
                 formik.resetForm();
                 setSuccesss(true);
+                
             } catch (error) {
                 console.error(error);
             }
