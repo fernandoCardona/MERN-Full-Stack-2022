@@ -1,0 +1,15 @@
+.footer-info {
+  width: 33.33%;
+  color: #fff;
+}
+.footer-info .logo {
+  width: 100px;
+}
+.footer-info p {
+  opacity: 0.4;
+  margin: 20px 0;
+}
+.footer-info a {
+  font-size: 16px;
+  padding: 7px !important;
+}/*# sourceMappingURL=Info.css.map */

@@ -1,0 +1,13 @@
+.footer-newsletter {
+  width: 33.33%;
+  padding-left: 60px;
+}
+.footer-newsletter > h4 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+.footer-newsletter .success {
+  color: #84b84c;
+  text-align: center;
+  font-size: 12px;
+}/*# sourceMappingURL=Newsletter.css.map */

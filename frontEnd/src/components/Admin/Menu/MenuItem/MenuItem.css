@@ -1,0 +1,23 @@
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #c4c4c4;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+.menu-item:last-of-type {
+  border: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+.menu-item__info {
+  display: flex;
+  flex-direction: column;
+}
+.menu-item__info-title {
+  font-weight: bold;
+}
+.menu-item__info-path {
+  opacity: 0.6;
+}/*# sourceMappingURL=MenuItem.css.map */

@@ -1,0 +1,20 @@
+.footer-menu {
+  width: 33.33%;
+}
+.footer-menu > h4 {
+  color: #fff;
+}
+.footer-menu .ui.grid {
+  height: 100%;
+}
+.footer-menu .ui.grid .column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.footer-menu .ui.grid .column a {
+  color: #fff;
+}
+.footer-menu .ui.grid .column a:hover {
+  opacity: 0.6;
+}/*# sourceMappingURL=Menu.css.map */

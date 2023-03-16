@@ -1,0 +1,16 @@
+.ui.menu.admin-menu > .item {
+  display: flex;
+  color: #fff;
+  padding: 15px 20px !important;
+  margin: 0px !important;
+  border-radius: 0px !important;
+  transition: background-color 0.5s ease-out;
+}
+.ui.menu.admin-menu > .item:hover, .ui.menu.admin-menu > .item.active, .ui.menu.admin-menu > .item.active:hover {
+  color: #fff;
+  background-color: #0280b3;
+}
+.ui.menu.admin-menu > .item > i {
+  margin: 0px !important;
+  margin-right: 10px !important;
+}/*# sourceMappingURL=AdminMenu.css.map */

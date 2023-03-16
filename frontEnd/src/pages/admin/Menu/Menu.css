@@ -1,0 +1,8 @@
+.menu-page__add {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+.menu-page__add > .ui.button {
+  margin: 0px;
+}/*# sourceMappingURL=Menu.css.map */

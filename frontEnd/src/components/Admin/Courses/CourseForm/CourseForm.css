@@ -1,0 +1,26 @@
+.course-form__miniature {
+  margin-bottom: 16px;
+}
+.course-form__miniature > div {
+  width: 100%;
+  min-height: 120px;
+  border: 2px dashed #1890ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.course-form__miniature > div:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+.course-form__miniature > .ui.image {
+  width: 100%;
+  min-height: 120px;
+  margin: 0px;
+  border: 2px dashed #1890ff;
+  padding: 5px;
+}
+.course-form__miniature > .ui.image:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}/*# sourceMappingURL=CourseForm.css.map */

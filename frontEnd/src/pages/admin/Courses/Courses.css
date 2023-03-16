@@ -1,0 +1,15 @@
+.courses-page__add {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+.courses-page__add > .ui.button {
+  margin: opx;
+}
+.courses-page .ui.tab.segment {
+  height: calc(100vh - 200px);
+  overflow-y: scroll;
+}
+.courses-page .ui.tab.segment::-webkit-scrollbar {
+  display: none;
+}/*# sourceMappingURL=Courses.css.map */

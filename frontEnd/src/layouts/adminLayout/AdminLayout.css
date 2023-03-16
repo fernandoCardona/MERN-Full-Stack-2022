@@ -1,0 +1,30 @@
+.admin-layout {
+  min-height: 100vh;
+  max-height: 100vh;
+  display: flex;
+  background-color: #f0f3f4;
+}
+.admin-layout__left {
+  width: 200px;
+  background-color: #001b35;
+}
+.admin-layout__left .logo {
+  height: 30px;
+  width: 100%;
+  margin: 10px 0px;
+}
+.admin-layout__right {
+  width: calc(100% - 200px);
+}
+.admin-layout__right-header {
+  height: 50px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0px 10px;
+  background-color: #001b35;
+}
+.admin-layout__right-content {
+  position: relative;
+  margin: 20px;
+}/*# sourceMappingURL=AdminLayout.css.map */

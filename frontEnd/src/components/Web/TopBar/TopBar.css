@@ -1,0 +1,31 @@
+.top-bar {
+  height: 60px;
+  background-color: #16212b;
+}
+.top-bar > .ui.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+.top-bar__left {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.top-bar__left .logo {
+  height: 60%;
+}
+.top-bar__left .logo > svg {
+  height: 100%;
+}
+.top-bar__left .menu {
+  margin-left: 20px;
+}
+.top-bar__left .menu a {
+  margin: 0 5px;
+  color: #fff;
+}
+.top-bar__left .menu a:hover {
+  opacity: 0.6;
+}/*# sourceMappingURL=TopBar.css.map */

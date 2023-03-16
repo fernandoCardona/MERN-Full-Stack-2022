@@ -1,0 +1,30 @@
+.auth {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../../../assets/jpg/auth-bg.jpg");
+  background-position: center;
+  background-size: contain;
+  padding-top: 100px;
+}
+.auth .logo {
+  width: 200px;
+  margin-bottom: 30px;
+}
+.auth__forms {
+  width: 450px;
+}
+.auth__forms .ui.menu .item {
+  width: 50%;
+  justify-content: center;
+  background-color: #fff !important;
+  border-radius: 0px !important;
+  border-top: 4px solid #808080 !important;
+  font-size: 18px;
+}
+.auth__forms .ui.menu .item.active {
+  font-weight: normal;
+  border-radius: 0px !important;
+  border-top-color: #1890ff !important;
+}/*# sourceMappingURL=Auth.css.map */

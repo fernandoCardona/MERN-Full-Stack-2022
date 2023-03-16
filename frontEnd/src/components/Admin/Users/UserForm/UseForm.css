@@ -1,0 +1,12 @@
+.user-form__avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.user-form__avatar > .ui.image {
+  margin: 0px;
+  border: 2px dashed #1890ff;
+  padding: 5px;
+  cursor: pointer;
+}/*# sourceMappingURL=UseForm.css.map */

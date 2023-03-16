@@ -1,0 +1,40 @@
+.client-layout {
+  background-color: #16212b;
+  min-height: 100vh;
+}
+.client-layout__footer {
+  margin-top: 30px;
+  padding: 20px 0px 10px 0px;
+  border-top: 3px solid #1890ff;
+}
+.client-layout__footer > .ui.container {
+  display: flex;
+}
+.client-layout__footer > .ui.container:last-of-type {
+  justify-content: space-between;
+  margin-top: 30px;
+  color: #fff;
+  font-size: 12px;
+  opacity: 0.4;
+}
+@media only screen and (max-width: 768px) {
+  .client-layout__footer .footer-info,
+  .client-layout__footer .footer-menu,
+  .client-layout__footer .footer-newsletter {
+    width: 100%;
+    padding: 0px;
+  }
+  .client-layout__footer > .ui.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .client-layout__footer > .ui.container:last-of-type {
+    justify-content: center;
+    margin-top: 30px;
+    color: #fff;
+    font-size: 12px;
+    opacity: 0.4;
+  }
+}/*# sourceMappingURL=ClientLayout.css.map */

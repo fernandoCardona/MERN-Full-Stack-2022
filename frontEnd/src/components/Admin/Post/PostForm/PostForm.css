@@ -1,0 +1,33 @@
+.post-form .ui.button {
+  margin-top: 20px;
+}
+.post-form__miniature {
+  margin: 16px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.post-form__miniature > div {
+  width: 200px;
+  min-height: 120px;
+  border: 2px dashed #1890ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.post-form__miniature > div:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+.post-form__miniature > .ui.image {
+  width: 200px;
+  min-height: 120px;
+  border: 2px dashed #1890ff;
+  margin: 0px;
+  padding: 5px;
+}
+.post-form__miniature > .ui.image:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}/*# sourceMappingURL=PostForm.css.map */
