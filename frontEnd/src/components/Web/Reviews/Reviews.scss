@@ -63,3 +63,35 @@
         }
     }
   }
+@media only screen and (max-width: 768px) {
+    .reviews {
+      
+        &__list {
+          display: flex;
+          flex-wrap: wrap;
+          margin-top: 50px;
+      
+            > div {
+                width: 50%;
+            }
+        }
+      }
+
+}
+
+@media only screen and (max-width: 500px) {
+    .reviews {
+      
+        &__list {
+          display: flex;
+          flex-wrap: wrap;
+          margin-top: 30px;
+      
+            > div {
+                width:100%;
+                margin-bottom: 40px;
+            }
+        }
+      }
+
+}

@@ -14,22 +14,22 @@ export const Reviews = () => {
 
     return (
         <Container className="reviews">
-        <h2>Be part of the 150 thousand students</h2>
+            <h2>Be part of the 150 thousand students</h2>
 
-        <div className="reviews__list">
-            {map(reviewsData, (review, index) => (
-            <div key={index}>
-                <p>{review.comment}</p>
-                <div className="reviews__list-user">
-                <Image src={review.avatar} avatar />
-                <div>
-                    <span>{review.userName}</span>
-                    <span>{review.userType}</span>
+            <div className="reviews__list">
+                {map(reviewsData, (review, index) => (
+                <div key={index}>
+                    <p>{review.comment}</p>
+                    <div className="reviews__list-user">
+                    <Image src={review.avatar} avatar />
+                    <div>
+                        <span>{review.userName}</span>
+                        <span>{review.userType}</span>
+                    </div>
+                    </div>
                 </div>
-                </div>
+                ))}
             </div>
-            ))}
-        </div>
         </Container>
     )
 }

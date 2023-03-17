@@ -36,6 +36,7 @@
             padding: 30px;
             box-shadow: 0 0 10px 2px rgb(0 0 0 / 75%);
             border-radius: 10px;
+            min-height: 210px;
     
                 i {
                     margin: 0;
@@ -54,3 +55,44 @@
         }
     }
   }
+
+@media only screen and (max-width: 768px) {
+    .how-my-courses-work {
+        margin-top: 80px;
+      
+        &__items {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 50px;
+        
+            > div {
+                width: 50%;
+
+                > div {
+                    min-height: 190px;
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 560px) {
+    .how-my-courses-work {
+        margin-top: 80px;
+      
+        &__items {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 50px;
+        
+            > div {
+                width: 100%;
+                > div {
+                    min-height: 210px;
+                }
+            }
+        }
+    }
+
+}

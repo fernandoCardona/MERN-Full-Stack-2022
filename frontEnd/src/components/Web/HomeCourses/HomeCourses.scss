@@ -64,4 +64,51 @@
             width: 200px;
         }
     }
-  }
+}
+
+@media only screen and (max-width: 1024px) {
+    .home-courses {
+      
+        &__all-courses {
+          display: flex;
+          flex-wrap: wrap;
+          margin: 0 -10px;
+      
+            > a {
+                width: 100%;
+            }
+        }
+    }
+}
+
+ 
+
+@media only screen and (max-width: 560px) {
+    .home-courses {
+      
+        &__all-courses {
+          display: flex;
+          
+          flex-wrap: wrap;
+          margin: 0 -10px;
+      
+            > a {
+                width: 100%;
+                flex-direction: column;
+
+                > .ui.image {
+                    width: 100%;
+                    height: fit-content;
+                    max-height: 195px;
+                    margin: 0 auto;
+                }
+                > div {
+                    display: flex;
+                    flex-direction: column;
+                    padding: 10px 10px;
+                }
+            }
+        }
+    }
+
+}
