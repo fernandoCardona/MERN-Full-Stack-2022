@@ -30,12 +30,12 @@ export const Post = () => {
 
     return (
         <Container className="post">
-        <h1 className="title">{post.title}</h1>
+            <h1 className="title">{post.title}</h1>
 
-        <div
-            className="content"
-            dangerouslySetInnerHTML={{ __html: post.content }}
-        />
+            <div
+                className="content"
+                dangerouslySetInnerHTML={{ __html: post.content }}
+            />
         </Container>
     );
 }
