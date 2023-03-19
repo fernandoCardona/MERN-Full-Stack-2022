@@ -21,11 +21,11 @@ export const WebRouter = () => {
 
   return (
     <Routes>
-      <Route path="/" element={loadLayout(clientLayaout, Home )} />
-      <Route path="/courses" element={loadLayout(clientLayaout, Courses )} />
-      <Route path="/contact" element={loadLayout(clientLayaout, Contact )} />
-      <Route path="/blog" element={loadLayout(clientLayaout, Blog )} />
-      <Route path="/blog/:path" element={loadLayout(clientLayaout, Post )} />
+      <Route path="/" element={loadLayout( clientLayaout, Home )} />
+      <Route path="/courses" element={loadLayout( clientLayaout, Courses )} />
+      <Route path="/contact" element={loadLayout( clientLayaout, Contact )} />
+      <Route path="/blog" element={loadLayout( clientLayaout, Blog )} />
+      <Route path="/blog/:path" element={loadLayout( clientLayaout, Post )} />
     </Routes>
   )
 }

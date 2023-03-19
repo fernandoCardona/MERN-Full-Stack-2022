@@ -14,3 +14,4 @@
 - yarn add jwt-decode (decodifica jwt)
 - yarn add react-dropzone (crea zonas para soltar archivos y subirlos)
 - yarn add @tinymce/tinymce-react (Box editor)
+- yarn add luxon (dataTime)
